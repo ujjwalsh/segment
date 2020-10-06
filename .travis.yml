@@ -2,9 +2,9 @@ language: go
 
 go:
  - 1.7
-env:
-- OS=centos
-- OS=opensuse
+arch:
+  - amd64
+  - ppc64le
 script:
   - go get golang.org/x/tools/cmd/cover
   - go get github.com/mattn/goveralls
